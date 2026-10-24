@@ -93,6 +93,7 @@ body {
 
 /* Isi */
 .isi { position: relative; z-index: 6; max-width: 560px; margin: 0 auto; padding: 30px 18px calc(60px + env(safe-area-inset-bottom)); }
+
 /* Header atas */
 .topbar {
   position: sticky;
@@ -112,6 +113,7 @@ body {
 .topbar-title { font-family: var(--font-judul); font-weight: 700; font-size: 0.9rem; color: var(--emas); }
 .topbar img { height: 52px; width: auto; display: block; border-radius: 8px; }
 
+/* Hero */
 .hero { text-align: center; padding: 40px 10px 30px; }
 .hero-logo {
   width: 150px;
@@ -128,11 +130,21 @@ body {
   object-fit: cover;
   transform: scale(1.38); /* memotong pinggiran abu-abu, hanya lingkaran putihnya yang tampak */
 }
-.hero .big { font-size: 1.4rem; color: var(--emas); margin: 10px 0; line-height: 1.2; text-shadow: 0 0 20px rgba(245,197,66,.4); }
+
+/* "Perayaan Natal" (yang besar di bawah logo) */
+.hero .big {
+  font-size: 1.6rem;
+  color: var(--emas);
+  margin: 10px 0;
+  line-height: 1.2;
+  text-shadow: 0 0 20px rgba(245,197,66,.4);
+}
+
+/* Tema: "Glory to Glory" */
 .tema {
   font-family: var(--font-judul);
   font-style: italic;
-  font-weight: 560px;
+  font-weight: 600;
   font-size: 3.1rem;
   line-height: 1.35;
   color: var(--krem);
@@ -144,6 +156,7 @@ body {
   text-shadow: 0 0 18px rgba(245,197,66,.35);
 }
 
+/* Kartu */
 .card {
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(245,197,66,.45);
@@ -188,11 +201,9 @@ body {
   to   { transform: scale(1.15); filter: drop-shadow(0 0 16px var(--emas)); }
 }
 
-/* Ukuran final: letakkan PALING BAWAH file */
-.hero .big { font-size: 1.6rem; }
-.tema { font-size: 2.4rem; }
-
+/* ===== Layar HP (letakkan PALING BAWAH file) ===== */
 @media (max-width: 600px) {
+  .cover-box h1 { font-size: 2.6rem; }
   .hero .big { font-size: 1.5rem; }
-  .tema { font-size: 2.6rem; }
+  .tema { font-size: 2.4rem; }
 }
