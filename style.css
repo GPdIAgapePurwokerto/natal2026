@@ -189,7 +189,7 @@ body {
 }
 
 @media (max-width: 400px) {
-  .cover-box h1 { font-size: 2.6rem; }
+  .cover-box h1 { font-size: 1.8rem; }
   .hero .big { font-size: 2.3rem; }
   .tema { font-size: 1.6rem; }
 }
