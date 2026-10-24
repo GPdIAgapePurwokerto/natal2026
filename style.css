@@ -210,3 +210,12 @@ body {
      Angka 7.6 = pengaturan ukuran: makin KECIL angkanya, makin BESAR tulisannya. */
   .tema { font-size: min(2.4rem, calc((100vw - 64px) / 7.6)); }
 }
+
+/* ===== Teks satu baris di HP (tempel PALING BAWAH style.css) ===== */
+@media (max-width: 600px) {
+  /* "Selamat Natal & Tahun Baru" */
+  .footer .salam {
+    font-size: min(1.5rem, calc((100vw - 44px) / 15.2));
+    white-space: nowrap;
+  }
+}
