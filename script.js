@@ -70,11 +70,17 @@ function munculkanKartu() {
 // ============================================
 // HITUNG MUNDUR
 // ============================================
+let sudahSelesai = false;
+
 function updateCountdown() {
+  if (sudahSelesai) return;
+
   const selisih = new Date(DATA.tanggalISO).getTime() - Date.now();
 
   if (selisih <= 0) {
-    ['hari', 'jam', 'menit', 'detik'].forEach((id) => ($(id).textContent = '0'));
+    sudahSelesai = true;
+    document.querySelector('.countdown').innerHTML =
+      '<p class="countdown-selesai">🎄 Selamat Natal! Acara sudah dimulai 🎄</p>';
     return;
   }
 
@@ -83,7 +89,6 @@ function updateCountdown() {
   $('menit').textContent = Math.floor((selisih / 60000) % 60);
   $('detik').textContent = Math.floor((selisih / 1000) % 60);
 }
-updateCountdown();
 setInterval(updateCountdown, 1000);
 
 // ============================================

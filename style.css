@@ -93,14 +93,47 @@ body {
 
 /* Isi */
 .isi { position: relative; z-index: 6; max-width: 560px; margin: 0 auto; padding: 30px 18px calc(60px + env(safe-area-inset-bottom)); }
-.hero { text-align: center; padding: 50px 10px 30px; }
-.star { font-size: 3rem; animation: kilau 2s infinite alternate; }
-.hero .big { font-size: 2.8rem; color: var(--emas); margin: 10px 0; line-height: 1.2; text-shadow: 0 0 20px rgba(245,197,66,.4); }
+/* Header atas */
+.topbar {
+  position: sticky;
+  top: 10px;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  border: 1px solid rgba(245,197,66,.45);
+  border-radius: 16px;
+  background: rgba(5,2,13,.75);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(107,63,181,.25);
+}
+.topbar-title { font-family: var(--font-judul); font-weight: 700; font-size: 1.1rem; color: var(--emas); }
+.topbar img { height: 52px; width: auto; display: block; border-radius: 8px; }
+
+.hero { text-align: center; padding: 40px 10px 30px; }
+.hero-logo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 24px rgba(245,197,66,.45);
+  animation: kilau 2s infinite alternate;
+}
+.hero-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.38); /* memotong pinggiran abu-abu, hanya lingkaran putihnya yang tampak */
+}
+.hero .big { font-size: 1.8rem; color: var(--emas); margin: 10px 0; line-height: 1.2; text-shadow: 0 0 20px rgba(245,197,66,.4); }
 .tema {
   font-family: var(--font-judul);
   font-style: italic;
   font-weight: 600;
-  font-size: 1.9rem;
+  font-size: 3.1rem;
   line-height: 1.35;
   color: var(--krem);
   max-width: 440px;
@@ -132,6 +165,17 @@ body {
 .countdown div { background: rgba(5,2,13,.55); border: 1px solid rgba(107,63,181,.5); border-radius: 12px; padding: 12px 4px; }
 .countdown span { display: block; font-size: 1.9rem; font-weight: 700; color: var(--emas); font-variant-numeric: tabular-nums; }
 .countdown small { font-size: .75rem; text-transform: uppercase; letter-spacing: 1px; }
+.countdown-selesai {
+  grid-column: 1 / -1;
+  padding: 18px 10px;
+  font-family: var(--font-judul);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--emas);
+  background: rgba(5,2,13,.55);
+  border: 1px solid rgba(245,197,66,.5);
+  border-radius: 12px;
+}
 
 /* Detail */
 .detail { list-style: none; font-size: 1.1rem; line-height: 2; }
