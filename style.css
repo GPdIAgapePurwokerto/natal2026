@@ -132,7 +132,7 @@ body {
 .tema {
   font-family: var(--font-judul);
   font-style: italic;
-  font-weight: 600;
+  font-weight: 560px;
   font-size: 3.1rem;
   line-height: 1.35;
   color: var(--krem);
@@ -194,5 +194,5 @@ body {
 
 @media (max-width: 600px) {
   .hero .big { font-size: 1.5rem; }
-  .tema { font-size: 2rem; }
+  .tema { font-size: 2.6rem; }
 }
