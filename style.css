@@ -205,5 +205,8 @@ body {
 @media (max-width: 600px) {
   .cover-box h1 { font-size: 2.6rem; }
   .hero .big { font-size: 1.5rem; }
-  .tema { font-size: 1.8rem; }
+
+  /* Ukuran menyesuaikan lebar layar, jadi "Glory to Glory" selalu muat satu baris.
+     Angka 7.6 = pengaturan ukuran: makin KECIL angkanya, makin BESAR tulisannya. */
+  .tema { font-size: min(2.4rem, calc((100vw - 64px) / 7.6)); }
 }
