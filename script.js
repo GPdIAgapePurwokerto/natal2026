@@ -5,7 +5,7 @@ const DATA = {
   tahun: 2026,
   tema: '"Glory to Glory"',
   tanggalISO: '2026-12-25T18:00:00+07:00', // format: TAHUN-BULAN-TANGGALTJAM:MENIT:DETIK+07:00 (jam 24 format, WIB)
-  tanggalTeks: 'Jumat, 25 Desember 2026',
+  tanggalTeks: 'Minggu, 20 Desember 2026',
   waktuTeks: '18.00 WIB - selesai',
   tempat: 'GPdI Agape Purwokerto, Klenteng, Kedungrandu, Patikraja, Banyumas Regency, Central Java 53171',
   linkMaps: 'https://maps.app.goo.gl/GDah51ZpWUZ8Xo3r5',
@@ -89,6 +89,7 @@ function updateCountdown() {
   $('menit').textContent = Math.floor((selisih / 60000) % 60);
   $('detik').textContent = Math.floor((selisih / 1000) % 60);
 }
+updateCountdown();
 setInterval(updateCountdown, 1000);
 
 // ============================================

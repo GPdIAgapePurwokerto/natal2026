@@ -18,15 +18,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
   <!-- Bintang & salju -->
   <canvas id="snow"></canvas>
 
-  <!-- Halaman pembuka -->
+  <!-- Halaman pembuka (halaman 1) -->
   <section id="cover" class="cover">
+
+    <!-- Header halaman 1: tulisan di tengah, logo di pojok kanan -->
+    <div class="topbar topbar-cover topbar-center">
+      <span class="topbar-title">GPdI AGAPE PURWOKERTO</span>
+      <img src="gpdi.jpg" alt="Logo GPdI">
+    </div>
+
     <div class="cover-box">
       <p class="small">Undangan Perayaan</p>
       <h1 class="judul">Natal <span id="tahun">2026</span></h1>
@@ -36,11 +43,11 @@
     </div>
   </section>
 
-  <!-- Isi undangan -->
+  <!-- Isi undangan (halaman 2) -->
   <main id="isi" class="isi hidden">
 
-    <!-- Header: judul di kiri, logo di pojok kanan -->
-    <div class="topbar">
+    <!-- Header: tulisan di tengah, logo di pojok kanan -->
+    <div class="topbar topbar-center">
       <span class="topbar-title">GPdI AGAPE PURWOKERTO</span>
       <img src="gpdi.jpg" alt="Logo GPdI">
     </div>
@@ -49,7 +56,7 @@
       <div class="hero-logo"><img src="logo2.jpeg" alt="Logo GPdI Agape Purwokerto"></div>
       <p class="small">Dengan penuh sukacita,<br>kami mengundang Anda</p>
       <h1 class="judul big">Perayaan Natal</h1>
-      <p id="tema" class="tema">"Damai Natal di Hati Kita"</p>
+      <p id="tema" class="tema">"Glory to Glory"</p>
     </header>
 
     <section class="card">
@@ -80,6 +87,6 @@
     </footer>
   </main>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
