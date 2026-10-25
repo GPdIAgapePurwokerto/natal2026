@@ -4,7 +4,7 @@
 const DATA = {
   tahun: 2026,
   tema: '"Glory to Glory"',
-  tanggalISO: '2026-12-25T18:00:00+07:00', // format: TAHUN-BULAN-TANGGALTJAM:MENIT:DETIK+07:00 (jam 24 format, WIB)
+  tanggalISO: '2026-12-20T18:00:00+07:00', // format: TAHUN-BULAN-TANGGALTJAM:MENIT:DETIK+07:00 (jam 24 format, WIB)
   tanggalTeks: 'Minggu, 20 Desember 2026',
   waktuTeks: '18.00 WIB - selesai',
   tempat: 'GPdI Agape Purwokerto, Klenteng, Kedungrandu, Patikraja, Banyumas Regency, Central Java 53171',

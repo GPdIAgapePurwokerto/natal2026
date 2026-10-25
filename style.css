@@ -117,9 +117,8 @@ body {
 .topbar-center { justify-content: center; min-height: 72px; }
 .topbar-center .topbar-title {
   text-align: center;
-  white-space: nowrap;
   padding: 0 46px;
-  font-size: clamp(0.6rem, 3.3vw, 0.9rem);
+  font-size: 1.5rem;
 }
 .topbar-center img {
   position: absolute;
