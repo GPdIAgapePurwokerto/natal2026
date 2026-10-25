@@ -110,7 +110,7 @@ body {
   backdrop-filter: blur(6px);
   box-shadow: 0 0 20px rgba(107,63,181,.25);
 }
-.topbar-title { font-family: var(--font-judul); font-weight: 700; font-size: 0.9rem; color: var(--emas); }
+.topbar-title { font-family: var(--font-judul); font-weight: 700; font-size: 3rem; color: var(--emas); }
 .topbar img { height: 52px; width: auto; display: block; border-radius: 8px; }
 
 /* Header: tulisan di tengah, logo di pojok kanan */
